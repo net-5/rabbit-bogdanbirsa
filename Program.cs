@@ -10,22 +10,12 @@ namespace Classroom
     //has a birth date, and based on that you should be able to see how old the rabbit is
     //we also know that a rabbit is a mammal that moves, sleeps and eats
 
-    class Program
+ public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Rabbit rabbit = new Rabbit();
-            rabbit.Eyes = "red";
-            rabbit.Fur = "white";
-            rabbit.Gender = "male";
-            rabbit.BirthDate = 2017;
-            rabbit.Mammal = "mammal";
-            rabbit.Sleeps = "sleeps";
-            rabbit.Eats = "eats";
-            rabbit.GetRabbitInfo();
-            Console.WriteLine(rabbit.Age);
-
+            Rabbit animal = new Rabbit("blue", "Black", "female", "01,01,2016");
+            Console.WriteLine(animal);
         }
-
     }
 }
